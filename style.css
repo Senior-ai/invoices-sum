@@ -1,0 +1,108 @@
+body {
+    min-width: 300px;
+}
+.center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.small-image {
+    max-width: 75px;
+    height: auto;
+}
+.padding-btn {
+    padding: 5px;
+    margin: 5px;
+}
+.ams {
+    height: 20px;
+    width: 30px;
+}
+.enlargedDiv {
+    width: 300px;
+    display: block;
+}
+.remindme {
+    display: inline-block;
+    background-origin: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 8px;
+    margin: 2px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  /* .remindme:active {
+    transform: scale(0.9);
+  } */
+  
+  .brand__item {
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+  
+  .brand__item:hover {
+      box-shadow: 0 0 0 1px rgba(156, 156, 156, 0.6);
+      background-color: rgba(156, 156, 156, 0.6);
+  }
+
+  .remindme-sidebar {
+    width: 300px;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+.filter_button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid red;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+}  
+.div_mark {
+  width: 255px;
+  height: 30px;
+  border: 2px solid red;
+  background-color: transparent;
+  position: absolute;
+  top: 0; 
+  justify-content:center;
+  align-items:flex-start;
+}
+
+@keyframes decreaseSize {
+  from {
+    width: 40px; 
+    height: 40px; 
+  }
+  to {
+    width: 20px;
+    height: 20px; 
+  }
+}
+
+.red-circle-animation {
+  top: -3px;
+  width: 40px; /* Initial width */
+  height: 40px; /* Initial height */
+  border-radius: 50%; /* Make it a circle */
+  border: 2px solid red; /* Red color */
+  position: absolute;
+  align-items: center;
+  animation: decreaseSize 2s linear infinite; /* Animation properties */
+}

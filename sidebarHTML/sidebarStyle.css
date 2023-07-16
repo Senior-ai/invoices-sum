@@ -1,0 +1,23 @@
+.wrapper {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.bottom-element {
+    align-self: center;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+}
+.guide_div {
+    padding-left: 8px;
+}
+h1 {
+    color: blue;
+}
+body {
+overflow-x: hidden;
+}   

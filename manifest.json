@@ -1,0 +1,49 @@
+{
+    "name": "Invoice Sum",
+    "version": "1.0",
+    "description": "Summarizes your invoice emails",
+    "permissions": ["storage", "tabs", "notifications"],
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "/assets/icons/firstIcon.png",
+        "24": "/assets/icons/firstIcon.png",
+        "48": "/assets/icons/firstIcon.png",
+        "128": "/assets/icons/firstIcon.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },    
+      "web_accessible_resources": [
+        {
+          "resources": [
+            "/assets/icons/iconAction_white.png",
+            "/assets/icons/iconAction.png",
+            "/assets/icons/firstIcon.png",
+            "/assets/icons/sidebarIcon_32.png",
+            "/assets/icons/sidebarIcon_32grey.png",
+            "assets/gifs/importFilterGif.gif",
+            "/sidebarHTML/SidebarContent.html",
+            "/sidebarHTML/page2.html",
+            "sidebarHTML/page3.html"
+          ],
+          "matches": [
+            "<all_urls>"
+          ]
+        }
+      ],
+    "content_scripts": [{
+        "css": [
+            "style.css"
+        ],
+        "js": [
+            "gmail.js",
+            "popup.js"            
+        ],
+        "matches": [
+            "https://mail.google.com/*"
+        ]
+    }]
+}
